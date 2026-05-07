@@ -6,7 +6,7 @@ import plotly.graph_objects as go
 import os  # مكتبة للتعامل مع ملفات النظام
 
 # 1. إعداد واجهة المستخدم (Premium UI)
-st.set_page_config(page_title="NEHAD AI - LOCAL PRO", layout="wide")
+st.set_page_config(page_title="REHAM AI - LOCAL PRO", layout="wide")
 
 st.markdown("""
     <style>
@@ -34,7 +34,7 @@ products_data = {
 
 # 3. القائمة الجانبية
 with st.sidebar:
-    st.title("💎 NEHAD LOCAL")
+    st.title("💎 REHAM LOCAL")
     app_mode = st.selectbox("المهمة:", ["🚀 مولد الحملات المحلية", "📊 رادار السوق"])
 
 # --- المرحلة الأولى: مولد الحملات ---
@@ -79,4 +79,4 @@ elif app_mode == "📊 رادار السوق":
     st.plotly_chart(fig, use_container_width=True)
 
 st.divider()
-st.caption("نظام NEHAD AI LOCAL - يعتمد على الموارد المحلية لمشروعك")
+st.caption("نظام REHAM AI LOCAL - يعتمد على الموارد المحلية لمشروعك")
